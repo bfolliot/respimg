@@ -9,7 +9,7 @@ function respimg() {
         }
         var width = optimalWidth(resize[i]);
         src = src.replace("@width", width);
-        var newHtml = "<img src =\"" + src + "\" alt=\"" + alt + "\" />";
+        var newHtml = "<img src =\"" + src + "\" alt=\"" + alt + "\" width=\"" + width + "\" />";
         if (resize[i].innerHTML != newHtml) {
             resize[i].innerHTML = "<img src =\"" + src + "\" alt=\"" + alt + "\" />";
         }
@@ -37,7 +37,7 @@ function respimg() {
         var size = sortedData[0];
         for (var i = 0; i < sortedData.length; i++)
         {
-            if (parseInt(sortedData[i]) > parseInt(width)) {
+            if (parseInt(sortedData[i]) >= parseInt(width)) {
                 size = sortedData[i];
             }
         }

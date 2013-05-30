@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RespImg (Responsive Images Library)</title>
+        <link rel="stylesheet" type="text/css" href="./basic.css" />
+    </head>
+    <body>
+        <div class="header">
+            <h1>RespImg</h1>
+            <p>Basic example</p>
+        </div>
+        <div data-respimg-src="./img/respimg-basic-@width.jpg" data-respimg-width="50 100 200 300 400 500 700 900 1000" class="respimg">
+            <noscript>
+            <img src="./img/respimg-basic-500.jpg" alt="" />
+            </noscript>
+        </div>
+
+
+        <script src="../respimg-0.1.0.min.js"></script>
+        <script type="text/javascript">
+            respimg();
+        </script>      
+</body>
+</html>

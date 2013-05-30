@@ -1,0 +1,14 @@
+body{
+    margin:0;
+    width:100%;
+}
+.header{
+    text-align: center;
+}
+.respimg{
+    max-width:500px;
+    margin:0 auto;
+}
+.respimg img{
+    max-width:100%;
+}
